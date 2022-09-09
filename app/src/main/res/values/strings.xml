@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Basic</string>
+    <string name="loading">Loading...</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="loginemail">Email</string>
+    <string name="loginpassword">Password</string>
+    <string name="signin">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="todo">TODO</string>
+    <string name="number">Number</string>
+    <string name="repait_passwoed">Repait Passwoed</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
