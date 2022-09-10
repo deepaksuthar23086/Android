@@ -15,10 +15,10 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701"
+        app:layout_constraintVertical_bias="0.068"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -29,24 +29,25 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/fname"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/fname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216"
+        app:layout_constraintTop_toBottomOf="@+id/fname"
+        app:layout_constraintVertical_bias="0.019"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/email3"
-        android:layout_width="139dp"
+        android:layout_width="268dp"
         android:layout_height="33dp"
+        android:inputType="textWebEmailAddress"
         android:text="email"
-        android:textSize="22sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/lname"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/lname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283"
+        app:layout_constraintTop_toBottomOf="@+id/lname"
+        app:layout_constraintVertical_bias="0.025"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -56,10 +57,11 @@
         android:text="Number"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/email2"
-        app:layout_constraintStart_toStartOf="@+id/email2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34"
+        app:layout_constraintEnd_toEndOf="@+id/email3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email3"
+        app:layout_constraintTop_toBottomOf="@+id/email3"
+        app:layout_constraintVertical_bias="0.033"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -69,10 +71,11 @@
         android:text="password"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/number"
-        app:layout_constraintStart_toStartOf="@+id/number"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419"
+        app:layout_constraintEnd_toEndOf="@+id/number2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/number2"
+        app:layout_constraintTop_toBottomOf="@+id/number2"
+        app:layout_constraintVertical_bias="0.03"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -82,11 +85,49 @@
         android:text="Repait Password"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/passswoed1"
+        app:layout_constraintEnd_toEndOf="@+id/password1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/number"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/password1"
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+        app:layout_constraintVertical_bias="0.038"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/loginemail"
+        android:layout_width="281dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
+        android:text="email"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/loginid"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/loginid"
+        app:layout_constraintTop_toBottomOf="@+id/loginid" />
+
+    <TextView
+        android:id="@+id/loginpass"
+        android:layout_width="139dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/loginpassword"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/loginemail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginemail"
+        app:layout_constraintTop_toBottomOf="@+id/loginemail" />
+
+    <TextView
+        android:id="@+id/loginid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Login id"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/repaitpassword1"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/repaitpassword1"
+        app:layout_constraintTop_toBottomOf="@+id/repaitpassword1"
         tools:ignore="MissingConstraints" />
 
 

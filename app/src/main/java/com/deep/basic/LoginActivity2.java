@@ -24,10 +24,20 @@ public class LoginActivity2 extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String mobileemail = email.getText().toString();
+                String pass = password.getText().toString();
+
                 Intent intent = new Intent(LoginActivity2.this, Detail.class);
+
+                intent.putExtra("keyloginemial", mobileemail);
+                intent.putExtra("keyloginpass", pass);
+
                 startActivity(intent);
 
                 Toast.makeText(LoginActivity2.this, "Successful", Toast.LENGTH_SHORT).show();
+
+
+
 
             }
 

@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText firstname, lastname, number, password,email, repaitpassword;
+    EditText firstname, lastname, number, password, email, repaitpassword;
     Button signup;
     Toast toast;
 
@@ -36,14 +36,14 @@ public class RegisterActivity extends AppCompatActivity {
                 String pass = password.getText().toString();
                 String rpass = repaitpassword.getText().toString();
 
-                Intent intent = new Intent(RegisterActivity.this,LoginActivity2.class);
+                Intent intent = new Intent(RegisterActivity.this, Detail.class);
 
-                intent.putExtra("firstname", fname);
-                intent.putExtra("lastname", lname);
-                intent.putExtra("email", mail);
-                intent.putExtra("number", mobile);
-                intent.putExtra("password", pass);
-                intent.putExtra("repaitpassword", rpass);
+                intent.putExtra("keyfname", fname);
+                intent.putExtra("keylname", lname);
+                intent.putExtra("keyemail", mail);
+                intent.putExtra("keynumber", mobile);
+                intent.putExtra("keypassword", pass);
+                intent.putExtra("keyrepaitpassword", rpass);
 
                 startActivity(intent);
                 finish();

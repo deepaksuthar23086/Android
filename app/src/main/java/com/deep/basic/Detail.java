@@ -1,12 +1,11 @@
 package com.deep.basic;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class Detail extends AppCompatActivity {
-    TextView firstname1, lastname1, email1, number1, password1, repaitpassword1;
+    TextView firstname1, lastname1, email1, number1, password1, repaitpassword1, loginemail, loginpass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,20 +19,26 @@ public class Detail extends AppCompatActivity {
         number1 = findViewById(R.id.number2);
         password1 = findViewById(R.id.password1);
         repaitpassword1 = findViewById(R.id.repaitpassword1);
+        loginemail = findViewById(R.id.loginemail);
+        loginpass = findViewById(R.id.loginpass);
 
-        String firstname = getIntent().getStringExtra("fiestname");
-        String lastname = getIntent().getStringExtra("lastname");
-        String email = getIntent().getStringExtra("email");
-        String number = getIntent().getStringExtra("number");
-        String password = getIntent().getStringExtra("password");
-        String repaitpassword = getIntent().getStringExtra("repaitpassword");
+        String fname = getIntent().getStringExtra("keyfname");
+        String lname = getIntent().getStringExtra("keylname");
+        String mobileemail = getIntent().getStringExtra("keyemail");
+        String mobilenumber = getIntent().getStringExtra("keynumber");
+        String pass = getIntent().getStringExtra("keypassword");
+        String repaitpass = getIntent().getStringExtra("keyrepaitpassword");
+        String loginmemail = getIntent().getStringExtra("keyloginemial");
+        String loginpassword = getIntent().getStringExtra("keyloginpass");
 
-        firstname1.setText(firstname);
-        firstname1.setText(lastname);
-        firstname1.setText(email);
-        firstname1.setText(number);
-        firstname1.setText(password);
-        firstname1.setText(repaitpassword);
+        firstname1.setText(fname);
+        lastname1.setText(lname);
+        email1.setText(mobileemail);
+        number1.setText(mobilenumber);
+        password1.setText(pass);
+        repaitpassword1.setText(repaitpass);
+        loginemail.setText(loginmemail);
+        loginpass.setText(loginpassword);
 
 
     }
