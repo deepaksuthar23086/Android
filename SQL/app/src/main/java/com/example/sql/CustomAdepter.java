@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class CustomAdepter extends RecyclerView.Adapter<CustomAdepter.MyViewHolder> {
     private Context context;
-    private ArrayList fname, lname, email, number;
+    private ArrayList <String> fname, lname, email, number;
     CustomAdepter(Context context, ArrayList fname, ArrayList lname, ArrayList email, ArrayList number){
         this.context = context;
         this.fname = fname;

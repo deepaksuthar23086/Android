@@ -17,7 +17,7 @@ public class SQLDatabase extends SQLiteOpenHelper {
     private static final String EMAIL = "mail";
     private static final String NUMBER = "number";
     private static final String ID_NUMBER = "id";
-    public SQLDatabase(@Nullable Context context) {
+    public SQLDatabase(Context context) {
         super(context, DSName, null, 1);
 
     }
